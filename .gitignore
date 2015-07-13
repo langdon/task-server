@@ -11,3 +11,4 @@ _CPack_Packages
 patches
 *.exe
 *~
+.vagrant

@@ -1,0 +1,21 @@
+---
+specversion: 0.0.2
+id: taskd-atomicapp-app
+
+metadata:
+  name: taskd-atomicapp
+  appversion: 1.0.0
+  description: a nulecule and associated kubernetes and dockerfiles for Task Warrior Server
+  license:
+    name: MIT2.0
+  authors: [ "langdon <langdon@fedoraproject.org>" ]
+  homepage: 
+
+graph:
+  - name: taskd-atomicapp
+    artifacts:
+      kubernetes:
+        - file://artifacts/kubernetes/taskd-atomicapp-pod.yaml
+        - file://artifacts/kubernetes/taskd-atomicapp-service.yaml
+      docker:
+        - file://artifacts/docker/Dockerfile
